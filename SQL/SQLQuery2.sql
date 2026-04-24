@@ -1,3 +1,6 @@
+CREATE DATABASE Neflis;
+GO
+
 USE Neflis;
 GO
 
@@ -174,7 +177,7 @@ INSERT INTO Suscripcion (Cod_Usuario, Suscrito, Fecha_suscripcion, Fecha_Cancela
 (49,1,'2025-02-18',NULL),
 (50,0,'2025-02-19','2025-04-15');
 
-Select * FROM Usuario;
-Select * FROM Peliculas;
-Select * FROM Suscripcion;
-Select * FROM Calificacio n;
+SELECT * FROM Peliculas;
+SELECT * FROM Usuario;
+SELECT * FROM Calificacion;
+SELECT * FROM Suscripcion;

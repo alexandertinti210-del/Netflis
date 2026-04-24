@@ -2,7 +2,7 @@ package neflis;
 
 import java.util.Scanner;
 import dao.PeliculasDAO;
-
+import dao.CalificacionDAO;
 
 public class Menu {
 
@@ -28,15 +28,18 @@ public class Menu {
                     break;
                 
                 case 2:
-                    System.out.println("Ingrese genero: ");
-                    break;   
+                    sc.nextLine();
+                    System.out.print("Ingrese el genero: ");
+                    String genero = sc.nextLine();
+                    PeliculasDAO.filtrargenero(genero);
+                    break;  
                 
                 case 3:
-                    System.out.println("Falta hacerlo");
+                    CalificacionDAO.calificar();
                     break;
                     
                 case 4:
-                    System.out.println("Falta hacerlo");
+                    PeliculasDAO.top5();
                     break;
 
                 case 5:
